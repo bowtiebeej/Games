@@ -1,0 +1,138 @@
+/*Sets default colors and fonts*/
+body {
+	background-image: url("flowers.jpg");
+	background-repeat: tile;
+	background-color: #EE8EEE;
+}
+/*Sets Title location*/
+#gamesTitle {
+	color: #0055ff;
+	text-align: center;
+}
+/*Sets Title color and size*/
+#gamesTitle h1 {
+	font-size: 4em;
+	text-shadow: 2px 2px darkblue;
+}
+/*Sets subtitle color and size*/
+#gamesTitle h3 {
+	color: darkslateblue;
+	font-size: 2em;
+}
+
+/*Background area for game link and title*/
+#playGames {
+	height: 200px;
+	width: 100%;
+	/**/
+}
+
+/*Sets Game Title*/
+.wildride {
+	width: 25%;
+	text-align: center;
+	vertical-align: center;
+	font-size: 125%;
+	border: 1px solid black;
+	margin: 4% 10% 4%;
+	padding-top: 2em;
+	background: rgba(238, 130, 238, 0.6);
+}
+
+/*Allows for game image to animate*/
+a:link img {
+	box-shadow: 10px 10px 5px;
+}
+
+a:hover img {
+	box-shadow: 7px 7px 2px;
+}
+
+/*Copyright and Impressum*/
+#footer a {
+	/*display: inline-block;*/
+	color: darkslategray;
+	text-decoration: none;
+}
+/*Other Text*/
+#footer {
+	padding-top: 2em;
+	color: darkslategray;
+}
+
+/*Impressum Stylesheet*/
+
+#impressum {
+	background-color: #EE8EEE;
+	margin: 5% 0 0;
+}
+
+.impressum_title {
+	font-size: 2em;
+	background-color: darkblue;
+	color: #EE8EEE;
+	padding: .5em;
+	margin: 0 5% 1em;
+}
+
+#impressum_toprow {
+	background-color: #EE8EEE;
+	display: inline-block;
+	padding-top: 2em;
+	height: 50%;
+	width: 90%;
+	margin: 1em 5% 1em;
+	text-align: left;
+}
+
+.impressum_flowers {
+	height: 200px;
+	width: 200px;
+	vertical-align: top;
+	display: inline-block;
+	margin: .5em 0 4% 10%;
+	color: darkblue;
+}
+
+.impressum_flowers img {
+	height: 75%;
+	width: 75%;
+}
+
+.impressum_wildride {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
+	height: 175px;
+	width: 65%;
+	color: darkslateblue;
+}
+
+.impressum_wildride img {
+	float: left;
+	height: 85%;
+	padding: 10px 10px 0 0;
+}
+
+.impressum_rights {
+	margin: 1em 0 0;
+	padding: 1em 0 2%;
+	color: bisque;
+	background-color: darkblue;
+	width: 110%;
+}
+
+.impressum_rights h3 {
+	color: #aaa;
+}
+
+.impressum_rights p {
+	margin-left: 5%;
+	text-align: left;
+	padding: 0 1em;
+	color: #aaa;
+}
+
+#impressum .impressum_rights a{
+	color: aquamarine;
+}
