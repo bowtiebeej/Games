@@ -1,4 +1,9 @@
 /*Sets default colors and fonts*/
+html {
+	height: auto;
+	width: auto;
+}
+
 body {
 	background-image: url("flowers.jpg");
 	background-repeat: tile;
@@ -22,8 +27,10 @@ body {
 
 /*Background area for game link and title*/
 #playGames {
-	height: 200px;
+	height: 100%;
 	width: 100%;
+	position: relative;
+	margin-bottom: 2em;
 	/**/
 }
 
@@ -34,19 +41,41 @@ body {
 	vertical-align: center;
 	font-size: 125%;
 	border: 1px solid black;
-	margin: 4% 10% 4%;
+	margin: 4% 0 0 10%;
 	padding-top: 2em;
+	height: 9em;
+	background: rgba(238, 130, 238, 0.6);
+	position: relative;
+	top: 0;
+}
+/*Sets Build a Story*/
+.madlibs {
+	width: 25%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid black;
+	height: 9em;
+	margin: 0 0 0 40%;
+	padding: 4% 0 1.5em;
 	background: rgba(238, 130, 238, 0.6);
 }
 
+.madlibs button {
+	font-size: 2em;
+	box-shadow: 4px 4px 2px;
+}
 /*Allows for game image to animate*/
 a:link img {
-	box-shadow: 10px 10px 5px;
+	box-shadow: 8px 8px 4px;
 }
 
 a:hover img {
-	box-shadow: 7px 7px 2px;
+	box-shadow: 4px 4px 2px;
 }
+
+
 
 /*Copyright and Impressum*/
 #footer a {
@@ -56,8 +85,9 @@ a:hover img {
 }
 /*Other Text*/
 #footer {
+	margin: 0;
 	padding-top: 2em;
-	color: darkslategray;
+	color: darkslategray
 }
 
 /*Impressum Stylesheet*/
@@ -75,7 +105,7 @@ a:hover img {
 	margin: 0 5% 1em;
 }
 
-#impressum_toprow {
+#impressum_main {
 	background-color: #EE8EEE;
 	display: inline-block;
 	padding-top: 2em;
@@ -112,6 +142,13 @@ a:hover img {
 	float: left;
 	height: 85%;
 	padding: 10px 10px 0 0;
+}
+
+.impressum_madlibs {
+	display: inline-block;
+	margin-left: 10%;
+	width: 50%;
+	color: darkslateblue;
 }
 
 .impressum_rights {
