@@ -51,3 +51,7 @@ body {
 #storyBuilder .storyTitle input {
 	vertical-align: top;
 }
+
+#footer {
+	font-size: .75em;
+}
