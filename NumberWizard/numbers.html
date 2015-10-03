@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="bowtiefavicon.png">
+		<title>Number Wizard</title>
+		<meta name="description" content="A little guessing game for my nieces">
+		<meta name="keywords" content="HTML, CSS, JavaScript, search logic, guessing game">
+		<meta name="author" content="BJ Burns" content="Bowtie Beej">
+		<meta name="copyright" content="Bowtie Beej">
+		<meta name="contact" content="bowtiebeej@gmail.com">
+
+
+		<link rel="stylesheet" type="text/cee" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="numbersStyle.css">
+		<script src="numbers.js"></script>
+
+	</head>
+	<body id="numbers">
+		<!--If No JS then game won't work-->
+		<noscript>Please Turn On JavaScript for This Game to Work</noscript>
+
+		<h1>Welcome To The Number Guessing Game</h1>
+		<br>
+		<h2>Can I Guess Your Number in 5 Tries?</h2>
+		<!--Main Game div for text area and buttons-->
+		<div id="guessingGame">
+			<textarea readonly id="wizardText" name="Numbers" cols="60" rows="4">Think of a number between 1 an 100
+
+Don't tell me what it is</textarea>
+			<br>
+			<input id="gotIt" type="button" value="Got It" onclick="StartGame()">
+		</div>
+		<div id="footer">
+			<h6>&copy; 2015 <a href="http://bowtiebeej.com">Bowtie Beej</a> <a href="http://gamestoplay.azurewebsites.net/impressum.html">All Rights Reserved</a></h6>
+		</div>
+	</body>
+</html>

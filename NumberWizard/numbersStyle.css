@@ -1,0 +1,71 @@
+body {
+	background-color: darkblue;
+	background-image: url("background.png")
+}
+
+a {
+	text-decoration: none;
+}
+
+#index {
+	text-align: center;
+	font-family: monospace;
+	color: beige;
+	font-size: 125%;
+}
+
+h1 {
+	background-color: rgba(75, 75, 255, 0.8);
+	padding: 1em;
+	margin: 1% 20%;
+	border: 1px solid blue;
+}
+
+h2 {
+	background-color: rgba(75, 25, 255, .8);
+	padding: 1em;
+	margin: 0 30% 5%;
+}
+
+#numbers {
+	text-align: center;
+	font-family: monospace;
+	color: beige;
+	font-size: 125%;
+}
+
+input {
+	color: #000;
+	min-width: 4em;
+	margin: 0 2em 0;
+	font-size: 1.5em;
+}
+
+
+#wizardText {
+	border: 2px solid #000;
+	margin: 0 0 2em;
+	padding: 1em 0 0;
+	background-color: darkslateblue;
+	text-align: center;
+	color: beige;
+	font-size: 1.5em;
+	resize: none;
+}
+
+#gotIt {
+	margin: 1em;
+}
+
+#footer {
+	position: fixed;
+	top: 90%;
+	text-align: left;
+	margin: 1em;
+	color: #aaa;
+	vertical-align: bottom;
+}
+
+#footer a{
+	color: #aaa;
+}
