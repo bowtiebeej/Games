@@ -25,16 +25,16 @@ body {
 	font-size: 2em;
 }
 
-/*Background area for game link and title
+/*Background area for game link and title*/
 #playGames {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	margin-bottom: 2em;
 
-}*/
+}
 
-/*Sets Wild Ride
+/*Sets Wild Ride*/
 .wildride {
 	width: 25%;
 	text-align: center;
