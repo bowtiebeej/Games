@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8" />
+
+		<!-- This ensures the canvas works on IE9+.  Don't remove it! -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<!-- Standardised web app manifest -->
+		<link rel="manifest" href="mamadswildride/appmanifest.json" />
 		<link rel="icon" type="image/png" href="bowtiefavicon.png">
 		<link rel="stylesheet" type="text/CSS" href="gamepagestyle.css">
 		<script src="Number Wizard/numbers.js"></script>
 		<script src="canvas.js"></script>
 		<title>Games to Play</title>
-		<meta charset="UTF-8">
+		<!--<meta charset="UTF-8">-->
 		<meta name="description" content="List of games for my nieces to play">
 		<meta name="keywords" content="HTML, JavaScript, games, 2D, CSS, Construct 2, Unity, C#">
 		<meta name="author" content="BJ Burns" content="Bowtie Beej">
@@ -23,20 +30,95 @@
 		<!--Collection of Games for the girls-->
 		<div id="playGames">
 			<!--Mama D's Wild Ride Game-->
-			<div class="wildride">
-				<a href="mamadswildride/index.html" target="_blank"><img src="wagon.png"></a>
+			<!--<div class="wildride">-->
+				<!-- The canvas must be inside a div called c2canvasdiv -->
+				<div id="c2canvasdiv" style="margin: 0 auto; width: 535px; height: 768px;">
+
+					<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+					ID the runtime looks for in the jQuery ready event (above). -->
+					<canvas id="c2canvas" width="535" height="768">
+						<!-- This text is displayed if the visitor's browser does not support HTML5.
+						You can change it, but it is a good idea to link to a description of a browser
+						and provide some links to download some popular HTML5-compatible browsers. -->
+						Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+						<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+						<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+						<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+						<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+						<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/>
+					</canvas>
+
+				</div>
+
+				<br />
+
+				<!-- SCIRRA LTD LICENSE AGREEMENT
+					FREE EDITION USERS ARE NOT ALLOWED TO REMOVE, MODIFY OR HIDE THE FOLLOWING
+					LINES OF HTML5 CODE FROM THEIR EXPORTED GAMES. REMOVAL, MODIFICATION OR
+					ATTEMPTS TO HIDE THIS MESSAGE WILL BE IN BREACH OF THE FREE EDITION LICENSE
+				-->
+				<a href="http://www.scirra.com" target="_blank" style="font-family:Arial;color:DodgerBlue;" title="Make games">Made with Construct 2 &mdash; the HTML5 game maker</a>
+				<!-- End of Scirra Ltd. free edition limitation -->
+
+			<!--</div>
+
+			<!-- Pages load faster with scripts at the bottom -->
+
+			<!-- Construct 2 exported games require jQuery. -->
+			<script src="mamadswildride/jquery-2.1.1.min.js"></script>
+
+			<script src="mamadswildride/pathfind.js"></script>
+
+
+			<!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+			This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+			<script src="mamadswildride/c2runtime.js"></script>
+
+			<script>
+				// Size the canvas to fill the browser viewport.
+				jQuery(window).resize(function() {
+					cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+				});
+
+				// Start the Construct 2 project running on window load.
+				jQuery(document).ready(function ()
+				{
+					// Create new runtime using the c2canvas
+					cr_createRuntime("c2canvas");
+				});
+
+				// Pause and resume on page becoming visible/invisible
+				function onVisibilityChanged() {
+					if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+						cr_setSuspended(true);
+					else
+						cr_setSuspended(false);
+				};
+
+				document.addEventListener("visibilitychange", onVisibilityChanged, false);
+				document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+				document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+				document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+				if (navigator.serviceWorker && navigator.serviceWorker.register)
+				{
+					// Register an empty service worker to trigger web app install banners.
+					navigator.serviceWorker.register("sw.js", { scope: "./" });
+				}
+			</script>
+				<!--<a href="mamadswildride/index.html" target="_blank"><img src="wagon.png"></a>
 				<h3>Mama D's Wild Ride</h3>
 			</div>
 			<!--Madlibs Story Builder-->
-			<div class="madlibs">
+			<!--<div class="madlibs">
 				<a href="MadLibs/index.html" target="_blank"><button>Play</button></a>
 				<h3>Build A Story</h3>
 			</div>
 			<!--Number Guessing Game-->
-			<div class="numbers">
+			<!--<div class="numbers">
 				<input type="button" id="Guess" value="Play" inputtarget="_blank" onclick=window.open("NumberWizard/index.html")>
 				<h3>Can I Guess Your Number</h3>
-			</div>
+			</div>-->
 		</div>
 		<!--Copyright and Impressum-->
 		<div id="footer">
