@@ -1,3 +1,5 @@
+/*importing two Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=VT323|Press+Start+2P);
 /*Sets default colors and fonts*/
 html {
 	height: auto;
@@ -13,16 +15,24 @@ body {
 #gamesTitle {
 	color: #0055ff;
 	text-align: center;
+    font-family: 'Press Start 2P';
+}
+
+.banner {
+    margin: 2em auto;
 }
 /*Sets Title color and size*/
 #gamesTitle h1 {
-	font-size: 4em;
+	font-size: 3em;
 	text-shadow: 2px 2px darkblue;
+    padding: 1em auto;
 }
 /*Sets subtitle color and size*/
 #gamesTitle h3 {
 	color: darkslateblue;
-	font-size: 2em;
+	font-size: 3em;
+    font-family: 'VT323';
+    padding: 1.5em auto;
 }
 
 /*Background area for game link and title*/
@@ -35,47 +45,11 @@ body {
 }
 
 /*Sets Wild Ride*/
-.wildride {
-	width: 25%;
+#wildride {
 	text-align: center;
 	vertical-align: bottom;
 	font-size: 125%;
-	border: 1px solid black;
-	margin: 4% 0 0 4%;
-	padding: 2em 0 0;
-	max-height: 9em;
-	background: rgba(238, 130, 238, 0.6);
-	position: relative;
-	top: 0;
-}
-/*Sets Build a Story*/
-.madlibs {
-	width: 25%;
-	position: absolute;
-	font-size:125%;
-	top: 0;
-	text-align: center;
-	vertical-align: bottom;
-	border: 1px solid black;
-	max-height: 9em;
-	margin: 0 4% 0 37.5%;
-	padding-top: 4%;
-	background: rgba(238, 130, 238, 0.6);
-}
-/*Sets Guessing Game*/
-.numbers {
-	width: 25%;
-	position: absolute;
-	top: 0;
-	font-size: 125%;
-	right: 0;
-	text-align: center;
-	vertical-align: center;
-	border: 1px solid black;
-	max-height: 9em;
-	margin: 0 4% 0 0;
-	padding: 4% 0 0;
-	background: rgba(238, 130, 238, 0.6);
+	/*background: rgba(238, 130, 238, 0.6);*/
 }
 
 input,
@@ -99,17 +73,23 @@ a:hover img {
 
 
 /*Copyright and Impressum*/
-#footer a {
+footer a {
 	/*display: inline-block;*/
 	color: darkslategray;
 	text-decoration: none;
 }
 /*Other Text*/
-#footer {
+footer  {
+    font-family:  monospace;
+	display: block;
+	background-color: #006;
+	bottom: 0;
+	margin: 2em 0 0;
+	padding: 1em 2em 1em;
+	min-height: 2em;
+	min-width: 100%;
 	position: fixed;
-	top: 90%;
-	margin: 0;
-	color: darkslategray
+    color: #ccf;
 }
 
 /*Impressum Stylesheet*/

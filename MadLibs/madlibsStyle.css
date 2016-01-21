@@ -1,16 +1,15 @@
 body {
-	background-image: url("flowers.jpg");
-	background-repeat: tile;
+    background-image: url("EijaIte-Wineberries-Dogwood-and-Tea-02.jpg");
+	background-repeat: no-repeat;
 	color: darkblue;
 	font-size: 125%;
 }
 /*Index Page*/
 .title {
 	text-align: center;
-	margin: 1em 35% 1em;
-	padding: 1em 0;
-	background-color: rgba(238, 130, 238, 1);
+	color: navy;
 	font-size: 125%;
+    padding-bottom: 2em;
 }
 
 .title h1 {
@@ -32,9 +31,7 @@ body {
 /*Story Builder*/
 
 #storyBuilder {
-	border: 2px solid darkblue;
-	background-color: rgba(102, 102, 255, 0.75);
-	color: gold;
+	color: navy;
 	margin: 1em 10% 0;
 	padding: 0 0 1em;
 	font-weight: bold;
@@ -42,8 +39,7 @@ body {
 
 #storyBuilder p {
 	font-weight: normal;
-	color: peachpuff;
-	text-shadow: 0.1em 0.1em slateblue;
+	color: darkblue;
 	font-size: 110%;
 	margin: 1em 0 1em;
 }

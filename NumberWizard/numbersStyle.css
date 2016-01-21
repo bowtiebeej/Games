@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=VT323|Press+Start+2P);
+
 body {
 	background-color: darkblue;
 	background-image: url("background.png")
@@ -17,14 +19,15 @@ a {
 h1 {
 	background-color: rgba(75, 75, 255, 0.8);
 	padding: 1em;
-	margin: 1% 20%;
+	margin: 1% 5%;
 	border: 1px solid blue;
+    border-radius: 5px;
 }
 
 h2 {
 	background-color: rgba(75, 25, 255, .8);
 	padding: 1em;
-	margin: 0 30% 5%;
+	margin: 0 5% 5%;
 }
 
 #numbers {
@@ -37,7 +40,7 @@ h2 {
 input {
 	color: #000;
 	min-width: 4em;
-	margin: 0 2em 0;
+	margin: 0 .5em 0;
 	font-size: 1.5em;
 }
 

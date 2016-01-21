@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="bowtiefavicon.png">
 		<link rel="stylesheet" type="text/CSS" href="gamepagestyle.css">
-		<script src="Number Wizard/numbers.js"></script>
+		<script src="NumberWizard/numbers.js"></script>
 		<script src="canvas.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="bowtie.js"></script>
 		<title>Games to Play</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="List of games for my nieces to play">
@@ -17,34 +27,27 @@
 	<body>
 		<!--Title-->
 		<div id="gamesTitle" class="titlepage">
-			<h1>Games For You To Play</h1>
-			<h3>Click on the picture or button to play</h3>
 		</div>
 		<!--Collection of Games for the girls-->
 		<div id="playGames">
 			<!--Mama D's Wild Ride Game-->
-			<div class="wildride">
+            <div id="wildride" class="col-md-6 col-sm-12">
+                <!--<h3>Mama D's Wild Ride</h3>-->
+				<iframe src="mamadswildride/index.html" width="100%" height="850px" ></iframe>
+            </div>
 
-				<a href="mamadswildride/index.html" target="_blank"><img src="wagon.png"></a>
-				<h3>Mama D's Wild Ride</h3>
+			<div id="numbers" class="col-md-6 fit col-sm-12">
+				<iframe src="NumberWizard/index.html" width="100%" height="850px" )></iframe>
 			</div>
-			<!--Madlibs Story Builder-->
-			<div class="madlibs">
-				<a href="MadLibs/index.html" target="_blank"><button>Play</button></a>
-				<h3>Build A Story</h3>
+            <!--Madlibs Story Builder-->
+            <div id="madlibs" class="col-md-12 col-sm-12">
+				<iframe src="MadLibs/index.html" width="100%"" height="925px"></iframe>
 			</div>
-			<!--Number Guessing Game-->
-			<div class="numbers">
-				<input type="button" id="Guess" value="Play" inputtarget="_blank" onclick=window.open("NumberWizard/index.html")>
-				<h3>Can I Guess Your Number</h3>
-			</div>
+
 		</div>
 		<!--Copyright and Impressum-->
-		<div id="footer">
-			<div class="copyright">
-				<h5>&copy 2015 <a href="http://bowtiebeej.com">Bowtie Beej</a> All Rights Reserved Except Where Stated in <a href="impressum.html" rel="nofollow">Impressum.</a></h5>
-			</div>
-		</div>
+		<footer id="myFooter">
+		</footer>
 
 	</body>
 </html>
